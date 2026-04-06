@@ -9,7 +9,7 @@ on:
         default: 'snuffules-devcontainer' 
         type: choice
         options:  # Folders under `containers/` that have a repo set up in Quay.
-        - akuity-devcontainer
+        - snuffules-devcontainer
         - guestbook
         - leaderboard
       tag:
