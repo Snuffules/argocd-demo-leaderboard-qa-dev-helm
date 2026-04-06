@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/akuity/argo-cd-learning-assets/leaderboard
+  repository: quay.io/snuffules/argocd-demo-leaderboard-qa-dev-helm/leaderboard
   tag: 0.0.0
   pullPolicy: IfNotPresent
 
