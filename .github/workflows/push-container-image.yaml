@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: print inputs
         run: |
-          echo "Pushing container image: quay.io/akuity/argo-cd-learning-assets/${{ inputs.container }}:${{ inputs.tag }}."
+          echo "Pushing container image: quay.io/snuffules/argocd-demo-leaderboard-qa-dev-helm/${{ inputs.container }}:${{ inputs.tag }}."
 
       - name: Checkout code
         uses: actions/checkout@v3
@@ -45,5 +45,5 @@ jobs:
         with:
           context: 'containers/${{ inputs.container }}'
           push: true
-          tags: quay.io/akuity/argo-cd-learning-assets/${{ inputs.container }}:${{ inputs.tag }}
+          tags: quay.io/snuffules/argocd-demo-leaderboard-qa-dev-helm/${{ inputs.container }}:${{ inputs.tag }}
           platforms: 'linux/amd64,linux/arm64'
