@@ -6,10 +6,10 @@ on:
       container:
         description: 'The container to push'
         required: true
-        default: 'akuity-devcontainer' 
+        default: 'snuffules-devcontainer' 
         type: choice
         options:  # Folders under `containers/` that have a repo set up in Quay.
-        - akuity-devcontainer
+        - snuffules-devcontainer
         - guestbook
         - leaderboard
 
@@ -30,5 +30,5 @@ jobs:
         with:
           context: 'containers/${{ inputs.container }}'
           push: false
-          tags: quay.io/akuity/argo-cd-learning-assets/${{ inputs.container }}:pr-${{ github.event.pull_request.number }}
+          tags: quay.io/snuffules/argocd-demo-leaderboard-qa-dev-helm/${{ inputs.container }}:pr-${{ github.event.pull_request.number }}
           platforms: 'linux/amd64,linux/arm64'
