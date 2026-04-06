@@ -6,7 +6,7 @@ on:
       container:
         description: 'The container to push'
         required: true
-        default: 'akuity-devcontainer' 
+        default: 'snuffules-devcontainer' 
         type: choice
         options:  # Folders under `containers/` that have a repo set up in Quay.
         - akuity-devcontainer
