@@ -8,7 +8,7 @@ spec:
     namespace: 'dev'
   source:
     path: 'charts/leaderboard'
-    repoURL: 'ssh://root@10.5.0.35/root/argo-cd-learning-assets/'
+    repoURL: 'https://github.com/Snuffules/argocd-demo-leaderboard-qa-dev-helm/'
     targetRevision: HEAD
     helm:
       valueFiles:
